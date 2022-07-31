@@ -1,1 +1,2 @@
-source ~/.bashrceval "$(/opt/homebrew/bin/brew shellenv)"
+source ~/.bashrc
+eval "$(/opt/homebrew/bin/brew shellenv)"

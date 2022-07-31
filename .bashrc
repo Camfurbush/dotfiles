@@ -119,4 +119,4 @@ fi
 alias env="env|sort"
 export PATH="$PATH:~/bin"
 export GPG_TTY=$(tty)
-
+export VAULT_ADDR=http://vault.lan
