@@ -117,6 +117,10 @@ if ! shopt -oq posix; then
 fi
 
 alias env="env|sort"
+
 export PATH="$PATH:~/bin"
 export GPG_TTY=$(tty)
 export VAULT_ADDR=http://vault.lan
+
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
