@@ -49,3 +49,15 @@ YADM stands for Yet Another Dotfiles Manager, this allows you to track dotfiles 
    ```sh
    yadm pull origin main
    ```
+
+
+## Homebrew Install
+
+Steps for installing homebrew. This will eventually be added to the yadm bootstrap process
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/camfu/.bashrc
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
