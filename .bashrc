@@ -122,5 +122,10 @@ export PATH="$PATH:~/bin:~/.local/bin"
 export GPG_TTY=$(tty)
 export VAULT_ADDR=http://vault.lan
 
+if [ -f ~/.bashrc_secrets ]; then
+    source ~/.bashrc_secrets
+fi
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -f /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
