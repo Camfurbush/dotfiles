@@ -118,7 +118,7 @@ fi
 
 alias env="env|sort"
 
-export PATH="$PATH:~/bin:~/.local/bin"
+export PATH="$PATH:~/bin:~/.local/bin:/opt/homebrew/bin"
 export GPG_TTY=$(tty)
 export VAULT_ADDR=http://vault.lan
 
