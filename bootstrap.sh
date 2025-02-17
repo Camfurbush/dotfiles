@@ -28,6 +28,7 @@ cd ~/development
 git clone git@github.com:camfu-co/hl_docker.git
 git clone git@github.com:camfu-co/hl_docker_images.git
 git clone git@github.com:camfu-co/hl_github_pipelines.git
+git clone git@github.com:Camfurbush/camfurbush.git
 
 # Setup dotfiles
 yadm clone git@github.com:Camfurbush/dotfiles.git
