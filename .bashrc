@@ -128,7 +128,7 @@ export VAULT_ADDR=https://vault.camfu.co
 alias k=kubectl
 alias kcgc="kubectl config get-contexts"
 alias bashrc_update="yadm pull && source ~/.bashrc"
-
+alias docker_dev="docker run --platform linux/amd64 -it -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/app -w /app bash"
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH=$PATH:~/bin
 
@@ -161,9 +161,7 @@ docker_test () {
     docker_run $(docker_latest)
 }
 
-docker_dev () {
-    docker run --platform linux/amd64 -it -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/app -w /app $1 bash
-}
+
 
 ## Terminal Config
 stty -ixon
