@@ -119,19 +119,18 @@ fi
 
 ## Env Variables
 
-alias env="env|sort"
+
 
 export PATH="$PATH:~/bin:~/.local/bin:/opt/homebrew/bin"
 export GPG_TTY=$(tty)
 export VAULT_ADDR=https://vault.camfu.co
-
-alias k=kubectl
-alias kcgc="kubectl config get-contexts"
-alias bashrc_update="yadm pull && source ~/.bashrc"
-
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH=$PATH:~/bin
 
+alias env="env|sort"
+alias k=kubectl
+alias kcgc="kubectl config get-contexts"
+alias bashrc_update="yadm pull && source ~/.bashrc"
 
 if [ -f ~/.bashrc_secrets ]; then
     source ~/.bashrc_secrets
@@ -147,7 +146,7 @@ source <(kubectl completion bash)
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 
-## Alias
+## Functions
 
 docker_latest () {
     docker images | awk 'FNR == 2 {print}' | awk '{print $3}'
